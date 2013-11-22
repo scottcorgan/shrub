@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "node node_modules/.bin/mocwha"
+    "test": "node node_modules/.bin/mocha"
   },
   "repository": {
     "type": "git",

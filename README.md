@@ -33,10 +33,10 @@ shrub.filter(function (filePath, stats, next) {
 
 ## Methods
 
-### each
+### each(filterFn, onComplete)
 
 Asynchronous loop through file tree
 
-### filter
+### filter(filterFn, onComplete)
 
 Aynchronously filter the file tree
