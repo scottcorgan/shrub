@@ -40,3 +40,10 @@ Asynchronous loop through file tree
 ### filter(filterFn, onComplete)
 
 Aynchronously filter the file tree
+
+## Run tests
+
+```
+npm install
+npm test
+```
