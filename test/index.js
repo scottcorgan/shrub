@@ -1,19 +1,19 @@
 var path = require('path');
-var Timber = require('../');
+var Shrub = require('../');
 var expect = require('expect.js');
 var sinon = require('sinon');
 
 describe('filer', function () {
-  var timber;
+  var shrub;
   var dir = path.resolve(__dirname, './fixtures');
   
   beforeEach(function () {
-    timber = new Timber (dir);
+    shrub = new Shrub(dir);
   });
   
   describe('filter', function () {
     it('collects a set of files recursively based on a given directory', function (done) {
-      timber.filter(function (filePath, stats, cb) {
+      shrub.filter(function (filePath, stats, cb) {
         cb(true);
       }, function (files) {
         expect(files).to.contain(path.resolve(__dirname, './fixtures/file1.js'));
@@ -27,7 +27,7 @@ describe('filer', function () {
     });
     
     it('filters list of files based on filter callback', function (done) {
-      timber.filter(function (filePath, stats, cb) {
+      shrub.filter(function (filePath, stats, cb) {
         var fullFilePath = path.join(__dirname, './fixtures/file1.js');
         cb(filePath === fullFilePath);
       }, function (files) {
@@ -43,7 +43,7 @@ describe('filer', function () {
     it('executes each callback for each file', function (done) {
       var spy = sinon.spy();
       
-      timber.each(function (filePath, stats, cb) {
+      shrub.each(function (filePath, stats, cb) {
         spy();
         cb();
       }, function () {

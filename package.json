@@ -1,17 +1,17 @@
 {
-  "name": "timber",
+  "name": "shrub",
   "version": "0.1.0",
-  "description": "Manipulate lists of files in Nodejs",
+  "description": "Manipulate lists of files recursively in Node",
   "main": "index.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "node node_modules/.bin/mocha"
+    "test": "node node_modules/.bin/mocwha"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/scottcorgan/timber.git"
+    "url": "https://github.com/scottcorgan/shrub.git"
   },
   "keywords": [
     "filter",
@@ -22,7 +22,7 @@
   "author": "Scott Corgan",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/scottcorgan/timber/issues"
+    "url": "https://github.com/scottcorgan/shrub/issues"
   },
   "devDependencies": {
     "mocha": "~1.14.0",

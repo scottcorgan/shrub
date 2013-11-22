@@ -2,11 +2,11 @@ var fs = require('fs');
 var path = require('path');
 var walk = require('walk');
 
-var Timber = function (dir) {
+var Shrub = function (dir) {
   this.dir = dir;
 };
 
-Timber.prototype.each = function (filterFn, callback) {
+Shrub.prototype.each = function (filterFn, callback) {
   var walker = walk.walk(this.dir, {
     followLinks: false
   });
@@ -24,7 +24,7 @@ Timber.prototype.each = function (filterFn, callback) {
   });
 };
 
-Timber.prototype.filter = function (filterFn, callback) {
+Shrub.prototype.filter = function (filterFn, callback) {
   var _files = [];
   
   this.each(function (filePath, stats, cb) {
@@ -37,4 +37,4 @@ Timber.prototype.filter = function (filterFn, callback) {
   });
 };
 
-module.exports = Timber;
+module.exports = Shrub;
