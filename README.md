@@ -22,12 +22,12 @@ shrub.each(function (filePath, stats, next) {
 });
 
 shrub.filter(function (filePath, stats, next) {
-  // Callback a true statement to add this files
+  // Callback a true statement to add this file
   // to the filtered list
   
   next(filePath === 'some/file/path');
 }, function (files) {
-  //
+  // complete
 });
 ```
 
