@@ -1,7 +1,7 @@
 {
   "name": "shrub",
   "version": "0.2.0",
-  "description": "Manipulate lists of files recursively in Node",
+  "description": "Manipulate lists of files recursively in Node. Chainable API with a promise ending.",
   "main": "index.js",
   "directories": {
     "test": "test"
