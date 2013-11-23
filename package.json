@@ -1,6 +1,6 @@
 {
   "name": "shrub",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Manipulate lists of files recursively in Node",
   "main": "index.js",
   "directories": {
@@ -30,7 +30,6 @@
     "sinon": "~1.7.3"
   },
   "dependencies": {
-    "promise": "~3.2.0",
     "walk": "~2.2.1"
   }
 }
